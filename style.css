@@ -33,7 +33,7 @@ nav{
 
 #open-btn{
     position:fixed;
-    top: 80%;
+    bottom:10%
     right:10%;
     align-items: center;
     justify-content: center;
