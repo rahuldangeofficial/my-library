@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+     <!--googleFont-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&display=swap" rel="stylesheet">
+     <!--FontAwesome link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head>
+<body>
+
+<nav>
+    <h1 style="opacity: 0.7;">My Library</h1>
+</nav>
+
+
+
+        <!-- Model Open Button -->
+        <buttom id="open-btn">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </buttom>
+        <!-- Model -->
+        <div id="model-container">
+            <div  id="model" class="box container">
+            <form id="form">
+
+            <label for="title">Book Title</label>
+            <input type="text" id="title" name="title">
+    
+            <label for="author">Book Author</label>
+            <input type="text" id="author" name="author">
+
+            <label for="pages">Book Page Count</label>
+            <input type="text" id="pages" name="pages">
+    
+            <label for="readStatus">Book Read Status</label>
+            <input type="text" id="readStatus" name="readStatus">
+
+            <div style="display:flex;padding-right:1rem;justify-content:space-between;">
+                <button class="button-1" onclick="addBookToLibrary(
+                document.getElementById('title').value,
+                document.getElementById('author').value,
+                document.getElementById('pages').value,
+                document.getElementById('readStatus').value
+                )">Add Book</button>
+                <button class="button-2" id="close-btn">Close</button>
+            </div>
+        </form>
+        </div>
+        </div>
+        
+        <div id="space"></div>
+ 
+     <script src="script.js"></script> 
+</body>
+</html>
